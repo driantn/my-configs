@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "root": true,
+  "settings": {
+    "import/resolver": {
+      "typescript": true,
+      "node": true
+    }
+  },
+  "rules": {
+    "import/no-default-export": 2
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*", "vite.config.ts"],
+      "rules": {
+        "import/no-default-export": 0
+      }
+    }
+  ]
+}
