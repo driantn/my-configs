@@ -20,7 +20,12 @@
   },
   "overrides": [
     {
-      "files": ["src/**/*", "vite.config.ts"],
+      "files": [
+        "src/**/*",
+        "vite.config.ts",
+        "postcss.config.js",
+        "tailwind.config.js"
+      ],
       "rules": {
         "import/no-default-export": 0
       }
